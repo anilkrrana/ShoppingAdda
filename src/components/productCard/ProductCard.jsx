@@ -26,14 +26,14 @@ function ProductCard() {
             <div className="container px-5 py-8 md:py-16 mx-auto">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-10">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>Our Latest Collection</h1>
-                    <div class="h-1 w-20 bg-pink-600 rounded"></div>
+                    <div class="h-1 w-20 bg-cyan-400 rounded"></div>
                 </div>
 
                 <div className="flex flex-wrap -m-4">
                     {product.filter((obj)=> obj.title.toLowerCase().includes(searchkey))
                     .filter((obj)=>obj.category.toLowerCase().includes(filterType))
                     .filter((obj) => obj.price.includes(filterPrice)).slice(0,8).map((item,index) => {
-                        const { title, price, description, imageUrl, id } = item;
+                        const { title, price, imageUrl, id } = item;
                         return(
                             <div key={index} className="p-4 md:w-1/4  drop-shadow-lg " >
                                 <div className="h-full border-2 hover:shadow-gray-100 hover:shadow-2xl transition-shadow duration-300 ease-in-out    border-gray-200 border-opacity-60 rounded-2xl overflow-hidden" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
@@ -48,7 +48,7 @@ function ProductCard() {
                                         <div className=" flex justify-center">
                                             <button type="button" 
                                             onClick={() => addCart(item)}
-                                            className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
+                                            className="focus:outline-none text-white bg-cyan-400 hover:bg-cyan-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
 
                                         </div>
                                     </div>

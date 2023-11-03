@@ -68,6 +68,9 @@ export default function Footer() {
                     <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4" style={{ color: mode === 'dark' ? 'white' : '' }}>© 2023 ShoppingAdda —
                         <a href="https://www.linkedin.com/in/anil-kumar-rana/" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank" style={{ color: mode === 'dark' ? 'white' : '' }}>www.shoppingadda.com</a>
                     </p>
+                    <p className="text-sm font-bold text-black  px-2 py-1 rounded" style={{ color: mode === 'dark' ? 'white' : '' }}>Developed by Anil Rana —
+                        <a href="https://github.com/anilkrrana" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank" style={{ color: mode === 'dark' ? 'white' : '' }}>Github</a>
+                    </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <a className="text-gray-500">
                             <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
